@@ -1,0 +1,243 @@
+{
+  "personal": {
+    "name": "Amit Das",
+    "role": "Product Engineer & Gen AI",
+    "currentTitle": "Software Development Engineer II",
+    "currentCompany": "Yellow.ai",
+    "location": "Dhaka, Bangladesh",
+    "education": "NIT Trichy CSE",
+    "email": "mailamitad98@gmail.com",
+    "phone": "+8801946146373",
+    "github": "https://github.com/amitdas98",
+    "githubHandle": "amitdas98",
+    "linkedin": "https://linkedin.com/in/amit-das-1a2914180",
+    "linkedinHandle": "amit-das-1a2914180",
+    "cvFile": "/AMIT_DAS_CV_AI_ENG.pdf",
+    "cvFileName": "Amit_Das_CV.pdf"
+  },
+
+  "hero": {
+    "statusBadge": "Currently at Yellow.ai · Open to conversations",
+    "eyebrow": "Product Engineer / Gen AI / Edition 2026",
+    "tagline": "I build distributed systems that scale, Gen AI products that ship, and platforms that don't break at 2 a.m."
+  },
+
+  "terminal": {
+    "title": "amit-das ~ production",
+    "whoami": "product-engineer · gen-ai · distributed-systems",
+    "stats": [
+      { "key": "throughput",     "val": "1.5M msg/min" },
+      { "key": "platform-sla",   "val": "99.5%" },
+      { "key": "cost-savings",   "val": "$143K / yr" },
+      { "key": "enterprise-cos", "val": "900+" },
+      { "key": "ai-agents",      "val": "750+ live" },
+      { "key": "mttr-reduction", "val": "↓ 90%" }
+    ],
+    "currentlyBuilding": [
+      "engage engine rewrite in Go",
+      "target: 5,000+ TPS"
+    ]
+  },
+
+  "about": {
+    "lead": "I'm a Product Engineer at Yellow.ai with 4+ years of experience building Gen AI solutions, distributed messaging systems, and data pipelines that run at production scale across hundreds of enterprise clients.",
+    "paragraphs": [
+      "My work sits at the intersection of backend engineering and applied AI. I design systems that need to be fast, reliable, and maintainable — simultaneously. I've scaled platforms from idea to 1.5M messages per minute, replaced legacy infrastructure with solutions that save six figures annually, and taken features from concept to production in under a week.",
+      "I care about the whole product: not just the code that ships, but the observability around it, the cost model behind it, and the engineers who'll maintain it after me. That means architecture docs, code reviews, and setting up dashboards before the incident, not after."
+    ],
+    "callout": {
+      "label": "Currently building",
+      "lines": [
+        "**Nexus** — a Gen AI-powered agentic interface that lets enterprises build and manage AI agents entirely through natural language, eliminating the manual configuration friction that slows platform adoption. 750+ enterprise AI agents. 40%+ adoption increase.",
+        "Also currently rebuilding the notification engine in **Go** to scale beyond **5,000 TPS** — pushing past the limits of the existing Node.js architecture with a leaner, more concurrent runtime."
+      ]
+    },
+    "pullQuote": {
+      "text": "The best systems are the ones you stop thinking about — because they just work.",
+      "attribution": "On reliability"
+    }
+  },
+
+  "experience": [
+    {
+      "company": "Yellow.ai",
+      "roles": [
+        {
+          "title": "Software Development Engineer II",
+          "startDate": "Apr 2025",
+          "endDate": "Present",
+          "bullets": [
+            "Spearheaded **Nexus**, a Gen AI-powered agentic interface enabling enterprises to build and manage AI agents via natural language — driving a **40%+ increase in platform adoption** across 750+ enterprise AI agents.",
+            "Architected the Engage notification engine to handle peak loads of **1.5M messages/min**, redesigning BullMQ queues into a per-channel throttling layer with idempotency and rate-limiting — zero message loss at scale.",
+            "Replaced legacy cron-based archival (JSON dumps to Minio) with a structured cold storage layer using **S3 Tables in Parquet + AWS Athena** — eliminating hot database bloat and cutting annual infrastructure costs by **$93,000**.",
+            "Designed real-time analytics pipelines on PostgreSQL with time-based partitioning via `pg_partman`, benchmarked at production scale across **18B+ conversations per quarter**.",
+            "Overhauled observability across all modules (Grafana, Prometheus, New Relic) — cutting MTTD and MTTR by **90%**, improving platform SLA from 98.1% to **99.5%**.",
+            "Shipped a high-precision metering and rate-limiting system using Openmeter, eliminating **$50K+ in annual revenue leakage** across 900+ enterprise accounts.",
+            "Mentored junior engineers through code reviews and led technical design reviews for cross-module features to align implementation with platform-wide standards."
+          ]
+        },
+        {
+          "title": "Software Development Engineer I",
+          "startDate": "Sep 2022",
+          "endDate": "Apr 2025",
+          "bullets": [
+            "Owned the **Analyze module** end-to-end — built an LLM-powered conversation analysis pipeline that indexed insights into ElasticSearch and automatically derived knowledge bases to improve downstream AI agent performance.",
+            "Built core Engage platform features: an omni-channel marketing workflow builder, a CDP with user segmentation, and an event-driven campaign builder enabling personalized outreach across **10+ communication channels**.",
+            "Optimized query performance on ElasticSearch and MongoDB through index planning, query plan analysis, and schema restructuring — reducing p95 latency and ensuring **99.9% uptime** for high-traffic integrations.",
+            "Led rapid prototyping and end-to-end delivery of Meta platform integrations (WhatsApp, Facebook) — taking **WhatsApp Calling and MMLite from concept to production in under 1 week**, directly enabling new enterprise client acquisition."
+          ]
+        },
+        {
+          "title": "Software Engineering Intern",
+          "startDate": "Jun 2021",
+          "endDate": "Aug 2021",
+          "bullets": [
+            "Built a cross-platform SDK using Xamarin, streamlining the client integration process and accelerating platform adoption."
+          ]
+        }
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "label": "Gen AI · Agentic Systems",
+      "title": "Nexus — Natural Language Agent Builder",
+      "metric": "40%+ adoption increase · 750+ enterprise agents",
+      "description": "A Gen AI-powered interface that lets enterprises build, configure, and manage AI agents entirely through natural language — eliminating manual onboarding friction. Nexus abstracts complex agent configuration into a conversational loop, making enterprise AI accessible without engineering expertise. Directly drove platform-wide adoption growth.",
+      "tags": ["LangChain", "Node.js", "Gen AI", "TypeScript", "OpenAI"]
+    },
+    {
+      "label": "Distributed Systems · Messaging",
+      "title": "Engage Notification Engine",
+      "metric": "1.5M messages/min peak · Zero message loss",
+      "description": "Redesigned a plain BullMQ queue architecture into a per-channel throttling layer with idempotency guarantees and configurable rate-limiting. Burst traffic is shaped into controlled, fixed-rate downstream delivery — enterprise SLAs hold even during spikes. Simultaneously handles WhatsApp, email, SMS, push, and 10+ other channels.",
+      "tags": ["BullMQ", "Kafka", "Redis", "Node.js", "Rate-limiting", "Idempotency"]
+    },
+    {
+      "label": "Data Engineering · Cost Reduction",
+      "title": "Cold Storage Migration — S3 Tables + Athena",
+      "metric": "$93,000 saved annually · 18B+ conversations",
+      "description": "Replaced a legacy cron-based pipeline (single-day JSON dumps to Minio) with a structured cold storage layer using S3 Tables in Parquet format and AWS Athena for on-demand querying. Eliminated hot database bloat, enabled granular time-range queries, and cut infrastructure costs by six figures per year without sacrificing data accessibility.",
+      "tags": ["AWS S3", "Athena", "Parquet", "Airflow", "PostgreSQL", "pg_partman"]
+    },
+    {
+      "label": "AI / ML · Conversation Intelligence",
+      "title": "Analyze — LLM Conversation Pipeline",
+      "metric": "99.9% uptime · ElasticSearch at scale",
+      "description": "End-to-end ownership of the Analyze module: an LLM-powered pipeline that processes conversation data, indexes actionable insights into ElasticSearch, and automatically derives knowledge bases to improve downstream AI agent performance. Built the query optimization layer that kept p95 latency under control at high-traffic volume.",
+      "tags": ["LangChain", "ElasticSearch", "OpenAI", "Node.js", "MongoDB"]
+    },
+    {
+      "label": "Revenue Integrity · Billing",
+      "title": "Metering & Rate-Limiting — Openmeter",
+      "metric": "$50K+ revenue leakage eliminated · 900+ accounts",
+      "description": "Designed and shipped a high-precision metering system using Openmeter to track consumption and enforce rate limits across 900+ enterprise accounts. Resolved systematic billing discrepancies that had been quietly leaking revenue, and gave finance and ops teams a reliable, auditable source of truth for usage data.",
+      "tags": ["Openmeter", "Node.js", "PostgreSQL", "Redis"]
+    },
+    {
+      "label": "Integrations · Rapid Prototyping",
+      "title": "Meta Platform Integrations — WhatsApp & Facebook",
+      "metric": "Concept → production in < 1 week",
+      "description": "Led end-to-end delivery of WhatsApp Calling and MMLite beta features — from API design to production rollout. Compressed the typical vendor integration cycle from weeks into under seven days. These integrations became a competitive differentiator for Yellow.ai's go-to-market strategy and directly enabled new enterprise client acquisition.",
+      "tags": ["WhatsApp API", "Facebook API", "Node.js", "Webhooks"]
+    }
+  ],
+
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        { "name": "TypeScript",        "primary": true  },
+        { "name": "JavaScript (ES6+)", "primary": true  },
+        { "name": "Go",                "primary": false },
+        { "name": "Python",            "primary": false }
+      ]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "items": [
+        { "name": "Node.js",    "primary": true  },
+        { "name": "LangChain",  "primary": true  },
+        { "name": "Express.js", "primary": false },
+        { "name": "React.js",   "primary": false },
+        { "name": "OpenAI SDK", "primary": false }
+      ]
+    },
+    {
+      "category": "Data & Messaging",
+      "items": [
+        { "name": "Kafka",         "primary": true  },
+        { "name": "ElasticSearch", "primary": true  },
+        { "name": "PostgreSQL",    "primary": true  },
+        { "name": "MongoDB",       "primary": false },
+        { "name": "Redis",         "primary": false },
+        { "name": "BullMQ",        "primary": false }
+      ]
+    },
+    {
+      "category": "Cloud & Infrastructure",
+      "items": [
+        { "name": "AWS (S3, Athena)", "primary": true  },
+        { "name": "Kubernetes",       "primary": true  },
+        { "name": "Docker",           "primary": false },
+        { "name": "Nginx",            "primary": false },
+        { "name": "Helm",             "primary": false },
+        { "name": "Jenkins",          "primary": false },
+        { "name": "Airflow",          "primary": false }
+      ]
+    },
+    {
+      "category": "Observability & Tooling",
+      "items": [
+        { "name": "Grafana",    "primary": true  },
+        { "name": "Prometheus", "primary": true  },
+        { "name": "New Relic",  "primary": false },
+        { "name": "OpenSearch", "primary": false },
+        { "name": "Openmeter",  "primary": false },
+        { "name": "Git",        "primary": false }
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "label": "B.Tech · Computer Science & Engineering · 2018–2022",
+      "institution": "National Institute of Technology, Tiruchirappalli",
+      "metric": "NIT Trichy — Top 10 Engineering Institution, India",
+      "description": "Built a strong foundation in algorithms, data structures, distributed systems, and software engineering principles at one of India's premier technical institutes. The rigour of NIT Trichy's CS program directly shapes how I think about system design, trade-offs, and correctness under constraints.",
+      "tags": ["Tiruchirappalli, India", "2018 — 2022", "Computer Science & Engineering"]
+    }
+  ],
+
+  "blog": [
+    {
+      "badge": "soon",
+      "readTime": "~ 12 min read",
+      "title": "Scaling to 1.5M messages per minute — lessons from the Engage engine",
+      "excerpt": "How we redesigned a flat BullMQ queue into a per-channel throttling layer with idempotency. What burst traffic actually looks like at enterprise scale, and why \"just add more workers\" is the wrong answer.",
+      "href": "#"
+    },
+    {
+      "badge": "soon",
+      "readTime": "~ 8 min read",
+      "title": "Why we migrated from JSON dumps to Parquet + Athena (and saved $93K)",
+      "excerpt": "A walkthrough of replacing a cron-based Minio archival pipeline with S3 Tables in Parquet format. Why the cold storage decision compounded into six-figure annual infrastructure savings — and the benchmarks that made the case.",
+      "href": "#"
+    },
+    {
+      "badge": "soon",
+      "readTime": "~ 10 min read",
+      "title": "Building agentic interfaces with natural language — inside Nexus",
+      "excerpt": "What it takes to let non-technical users configure enterprise AI agents through conversation. Architecture, prompting patterns, and the UX challenges nobody talks about when building Gen AI products at scale.",
+      "href": "#"
+    },
+    {
+      "badge": "soon",
+      "readTime": "~ 7 min read",
+      "title": "Observability as a product decision, not an afterthought",
+      "excerpt": "How adding Grafana, Prometheus, and New Relic across our platform cut MTTD and MTTR by 90%. Why I now treat dashboards and alerting as a first-class engineering concern — before the first line of feature code.",
+      "href": "#"
+    }
+  ]
+}
