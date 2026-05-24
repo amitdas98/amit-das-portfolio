@@ -42,7 +42,7 @@
   "about": {
     "lead": "I'm a Product Engineer at Yellow.ai with 4+ years of experience building Gen AI solutions, distributed messaging systems, and data pipelines that run at production scale across hundreds of enterprise clients.",
     "paragraphs": [
-      "My work sits at the intersection of backend engineering and applied AI. I design systems that need to be fast, reliable, and maintainable — simultaneously. I've scaled platforms from idea to 1.5M messages per minute, replaced legacy infrastructure with solutions that save six figures annually, and taken features from concept to production in under a week.",
+      "My work sits at the intersection of backend engineering and applied AI. I design systems that need to be fast, reliable, and maintainable, all at the same time. I've scaled platforms from idea to 1.5M messages per minute, replaced legacy infrastructure with solutions that save six figures annually, and taken features from concept to production in under a week.",
       "I care about the whole product: not just the code that ships, but the observability around it, the cost model behind it, and the engineers who'll maintain it after me. That means architecture docs, code reviews, and setting up dashboards before the incident, not after."
     ],
     "callout": {
