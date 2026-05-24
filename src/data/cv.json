@@ -63,11 +63,11 @@
           "startDate": "Apr 2025",
           "endDate": "Present",
           "bullets": [
-            "Spearheaded **Nexus**, a Gen AI-powered agentic interface enabling enterprises to build and manage AI agents via natural language — driving a **40%+ increase in platform adoption** across 750+ enterprise AI agents.",
-            "Architected the Engage notification engine to handle peak loads of **1.5M messages/min**, redesigning BullMQ queues into a per-channel throttling layer with idempotency and rate-limiting — zero message loss at scale.",
-            "Replaced legacy cron-based archival (JSON dumps to Minio) with a structured cold storage layer using **S3 Tables in Parquet + AWS Athena** — eliminating hot database bloat and cutting annual infrastructure costs by **$93,000**.",
+            "Spearheaded **Nexus**, a Gen AI-powered agentic interface enabling enterprises to build and manage AI agents via natural language, driving a **40%+ increase in platform adoption** across 750+ enterprise AI agents.",
+            "Architected the Engage notification engine to handle peak loads of **1.5M messages/min**, redesigning BullMQ queues into a per-channel throttling layer with idempotency and rate-limiting. Zero message loss at scale.",
+            "Replaced legacy cron-based archival (JSON dumps to Minio) with a structured cold storage layer using **S3 Tables in Parquet + AWS Athena**, eliminating hot database bloat and cutting annual infrastructure costs by **$93,000**.",
             "Designed real-time analytics pipelines on PostgreSQL with time-based partitioning via `pg_partman`, benchmarked at production scale across **18B+ conversations per quarter**.",
-            "Overhauled observability across all modules (Grafana, Prometheus, New Relic) — cutting MTTD and MTTR by **90%**, improving platform SLA from 98.1% to **99.5%**.",
+            "Overhauled observability across all modules (Grafana, Prometheus, New Relic), cutting MTTD and MTTR by **90%**, improving platform SLA from 98.1% to **99.5%**.",
             "Shipped a high-precision metering and rate-limiting system using Openmeter, eliminating **$50K+ in annual revenue leakage** across 900+ enterprise accounts.",
             "Mentored junior engineers through code reviews and led technical design reviews for cross-module features to align implementation with platform-wide standards."
           ]
@@ -77,10 +77,10 @@
           "startDate": "Sep 2022",
           "endDate": "Apr 2025",
           "bullets": [
-            "Owned the **Analyze module** end-to-end — built an LLM-powered conversation analysis pipeline that indexed insights into ElasticSearch and automatically derived knowledge bases to improve downstream AI agent performance.",
+            "Owned the **Analyze module** end-to-end, built an LLM-powered conversation analysis pipeline that indexed insights into ElasticSearch and automatically derived knowledge bases to improve downstream AI agent performance.",
             "Built core Engage platform features: an omni-channel marketing workflow builder, a CDP with user segmentation, and an event-driven campaign builder enabling personalized outreach across **10+ communication channels**.",
-            "Optimized query performance on ElasticSearch and MongoDB through index planning, query plan analysis, and schema restructuring — reducing p95 latency and ensuring **99.9% uptime** for high-traffic integrations.",
-            "Led rapid prototyping and end-to-end delivery of Meta platform integrations (WhatsApp, Facebook) — taking **WhatsApp Calling and MMLite from concept to production in under 1 week**, directly enabling new enterprise client acquisition."
+            "Optimized query performance on ElasticSearch and MongoDB through index planning, query plan analysis, and schema restructuring, reducing p95 latency and ensuring **99.9% uptime** for high-traffic integrations.",
+            "Led rapid prototyping and end-to-end delivery of Meta platform integrations (WhatsApp, Facebook), taking **WhatsApp Calling and MMLite from concept to production in under 1 week**, directly enabling new enterprise client acquisition."
           ]
         },
         {

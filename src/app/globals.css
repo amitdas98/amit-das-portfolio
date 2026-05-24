@@ -681,12 +681,10 @@ body::before {
   position: relative;
 }
 .expBullets li::before {
-  content: '·';
+  content: '—';
   color: var(--accent);
   position: absolute;
-  left: -16px;
-  font-size: 18px;
-  line-height: 1.5;
+  left: -20px;
 }
 
 /* ─────────────────────────────────────────
