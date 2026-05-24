@@ -34,11 +34,6 @@ export default function About({ about }: { about: CV['about'] }) {
         ))}
       </div>
 
-      <blockquote className="pull">
-        {about.pullQuote.text}
-        <span className="pullAttr">— {about.pullQuote.attribution}</span>
-      </blockquote>
-
       <div className="chapterEnd">⁂</div>
     </>
   )

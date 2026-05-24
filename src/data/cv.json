@@ -51,10 +51,6 @@
         "**Nexus** — a Gen AI-powered agentic interface that lets enterprises build and manage AI agents entirely through natural language, eliminating the manual configuration friction that slows platform adoption. 750+ enterprise AI agents. 40%+ adoption increase.",
         "Also currently rebuilding the notification engine in **Go** to scale beyond **5,000 TPS** — pushing past the limits of the existing Node.js architecture with a leaner, more concurrent runtime."
       ]
-    },
-    "pullQuote": {
-      "text": "The best systems are the ones you stop thinking about — because they just work.",
-      "attribution": "On reliability"
     }
   },
 

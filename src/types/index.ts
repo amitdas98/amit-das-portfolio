@@ -71,7 +71,6 @@ export interface CV {
     lead: string
     paragraphs: string[]
     callout: { label: string; lines: string[] }
-    pullQuote: { text: string; attribution: string }
   }
   experience: ExperienceEntry[]
   projects: Project[]
