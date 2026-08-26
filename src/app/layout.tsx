@@ -26,12 +26,18 @@ const interTight = Inter_Tight({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://amit-das.com'),
   title: 'Amit Das — Product Engineer',
   description: 'Product Engineer with 4+ years building Gen AI solutions and distributed systems at scale. Currently at Yellow.ai.',
   openGraph: {
     title: 'Amit Das — Product Engineer & Gen AI',
     description: '4+ years building platforms that scale to 1.5M msg/min. Gen AI, distributed systems, data pipelines.',
     type: 'website',
+    url: 'https://amit-das.com/',
+    siteName: 'Amit Das',
+  },
+  twitter: {
+    card: 'summary_large_image',
   },
 }
 

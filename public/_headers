@@ -1,0 +1,9 @@
+# Next.js writes the Open Graph images without a file extension.
+# Cloudflare Pages needs the content type, or a social site rejects the image.
+/opengraph-image
+  Content-Type: image/png
+  Cache-Control: public, max-age=3600
+
+/blog/:slug/opengraph-image
+  Content-Type: image/png
+  Cache-Control: public, max-age=3600

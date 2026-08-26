@@ -60,3 +60,12 @@ skips a file that has no `title` in its frontmatter.
 Markdown files are the only source of live posts. The `blog` list in
 `src/data/cv.json` holds the "Coming soon" cards only. Do not add a live entry
 there; the page does not show it.
+
+## Social preview image
+
+Each post gets a 1200x630 preview image on its own. The build makes it from the
+title, the deck, and the read time. You do not add an image file.
+
+After you publish a new post, ask Facebook to read the page again:
+open `https://developers.facebook.com/tools/debug/`, paste the post URL, and
+press **Scrape Again**.
