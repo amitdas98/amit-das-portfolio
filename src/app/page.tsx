@@ -1,4 +1,5 @@
 import cvRaw from '@/data/cv.json'
+import { getAllPostMeta } from '@/lib/posts'
 import type { CV } from '@/types'
 const cv = cvRaw as unknown as CV
 import Sidebar from '@/components/Sidebar'
@@ -13,6 +14,8 @@ import Blog from '@/components/Blog'
 import Contact from '@/components/Contact'
 
 export default function Home() {
+  const posts = getAllPostMeta()
+
   return (
     <>
       <ProgressBar />
@@ -26,7 +29,7 @@ export default function Home() {
             <Projects projects={cv.projects} />
             <Skills skills={cv.skills} />
             <Education education={cv.education} />
-            <Blog blog={cv.blog} />
+            <Blog blog={cv.blog} posts={posts} />
             <Contact personal={cv.personal} />
           </div>
         </main>

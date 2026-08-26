@@ -1042,3 +1042,292 @@ body::before {
   body::before { display: none; }
   .layout { display: block; }
 }
+
+/* ─────────────────────────────────────────
+   BLOG POST PAGE
+───────────────────────────────────────── */
+.postShell {
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+.postBar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 32px;
+  background: rgba(244,239,230,0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(42,38,32,0.18);
+}
+.postBarName {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.postBack {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+.postBack:hover { background: var(--accent-wash); color: var(--accent); }
+
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 32px 96px;
+}
+
+.postHead {
+  padding-bottom: 26px;
+  margin-bottom: 34px;
+  border-bottom: 2px solid var(--rule);
+}
+.postMeta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.postMetaItem {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+.postTitle {
+  font-family: var(--font-fraunces), serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+.postDeck {
+  font-family: var(--font-fraunces), serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.postTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 18px;
+}
+.postTag {
+  font-family: var(--font-mono), monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  border: 1px solid rgba(42,38,32,0.2);
+  border-radius: 2px;
+  padding: 3px 8px;
+}
+
+.postFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid rgba(42,38,32,0.18);
+}
+
+/* ─────────────────────────────────────────
+   PROSE
+───────────────────────────────────────── */
+.prose {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+.prose > *:first-child { margin-top: 0; }
+.prose p { margin: 0 0 20px; }
+.prose h2 {
+  font-family: var(--font-fraunces), serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 48px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(42,38,32,0.18);
+}
+.prose h3 {
+  font-family: var(--font-fraunces), serif;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 34px 0 12px;
+}
+.prose h4 {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 26px 0 10px;
+}
+.prose a {
+  color: var(--accent-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+.prose a:hover { background: var(--accent-wash); }
+.prose strong { color: var(--ink); font-weight: 600; }
+.prose em { font-family: var(--font-fraunces), serif; font-style: italic; }
+
+.prose ul, .prose ol { margin: 0 0 20px; padding-left: 22px; }
+.prose li { margin-bottom: 8px; }
+.prose li::marker { color: var(--accent); }
+
+.prose blockquote {
+  margin: 26px 0;
+  padding: 14px 22px;
+  border-left: 3px solid var(--accent);
+  background: rgba(216,235,236,0.35);
+  font-family: var(--font-fraunces), serif;
+  font-size: 17.5px;
+  font-style: italic;
+  color: var(--ink);
+}
+.prose blockquote p:last-child { margin-bottom: 0; }
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid rgba(42,38,32,0.2);
+  margin: 40px 0;
+}
+
+.prose code {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.86em;
+  background: var(--paper-shade);
+  border: 1px solid rgba(42,38,32,0.14);
+  border-radius: 2px;
+  padding: 1px 5px;
+  color: var(--ink);
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 26px 0;
+  font-size: 14.5px;
+}
+.prose th, .prose td {
+  border: 1px solid rgba(42,38,32,0.18);
+  padding: 8px 12px;
+  text-align: left;
+}
+.prose th {
+  background: var(--paper-shade);
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.prose img { max-width: 100%; height: auto; }
+
+.codeBlock {
+  position: relative;
+  margin: 26px 0;
+  background: var(--paper-shade);
+  border: 1px solid rgba(42,38,32,0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.codeLang {
+  display: block;
+  font-family: var(--font-mono), monospace;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  background: rgba(42,38,32,0.05);
+  border-bottom: 1px solid rgba(42,38,32,0.14);
+  padding: 5px 14px;
+}
+.codeBlock pre {
+  margin: 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+}
+.codeBlock code {
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  line-height: 1.65;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--ink);
+  white-space: pre;
+}
+
+pre.mermaid {
+  width: min(1060px, calc(100vw - 48px));
+  margin: 32px 0 32px 50%;
+  transform: translateX(-50%);
+  padding: 18px;
+  background: var(--paper);
+  border: 1px solid rgba(42,38,32,0.2);
+  border-radius: 4px;
+  overflow-x: auto;
+  text-align: center;
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+pre.mermaid svg { max-width: 100%; height: auto; }
+
+.blogQueueHead {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 40px 0 0;
+}
+.blogCardSoon { cursor: default; }
+.blogCardSoon:hover {
+  border-color: rgba(42,38,32,0.18);
+  box-shadow: none;
+  transform: none;
+  background: var(--paper);
+}
+.blogCardSoon:hover::before { opacity: 0; }
+
+@media (max-width: 760px) {
+  .post { padding: 36px 20px 72px; }
+  .postBar { padding: 12px 20px; }
+  .postTitle { font-size: 32px; }
+  pre.mermaid { width: 100%; margin: 26px 0; transform: none; }
+  .postDeck { font-size: 17px; }
+  .prose h2 { font-size: 24px; }
+}
