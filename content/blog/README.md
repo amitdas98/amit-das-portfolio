@@ -69,3 +69,9 @@ title, the deck, and the read time. You do not add an image file.
 After you publish a new post, ask Facebook to read the page again:
 open `https://developers.facebook.com/tools/debug/`, paste the post URL, and
 press **Scrape Again**.
+
+## Copy as Markdown
+
+The top bar of each post has a **Copy as Markdown** button. It copies the post
+source, without the frontmatter, to the clipboard. A reader can paste it into an
+AI agent. You do nothing to enable it.

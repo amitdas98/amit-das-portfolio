@@ -1059,7 +1059,7 @@ body::before {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 14px 32px;
+  padding: 12px 32px;
   background: rgba(244,239,230,0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(42,38,32,0.18);
@@ -1084,8 +1084,48 @@ body::before {
 }
 .postBack:hover { background: var(--accent-wash); color: var(--accent); }
 
+.postBarRight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.copyMd {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono), monospace;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--paper);
+  border: 1px solid rgba(42,38,32,0.28);
+  border-radius: 3px;
+  padding: 6px 11px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.copyMd:hover {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-wash);
+}
+.copyMd[data-state='copied'] {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-wash);
+}
+.copyMd[data-state='failed'] {
+  border-color: var(--warn);
+  color: var(--warn);
+  background: var(--warn-wash);
+}
+.copyMdIcon { font-size: 12px; line-height: 1; }
+
 .post {
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 56px 32px 96px;
 }
@@ -1157,8 +1197,8 @@ body::before {
 ───────────────────────────────────────── */
 .prose {
   font-family: var(--font-sans), sans-serif;
-  font-size: 16.5px;
-  line-height: 1.75;
+  font-size: 17.5px;
+  line-height: 1.72;
   color: var(--ink-soft);
 }
 .prose > *:first-child { margin-top: 0; }
@@ -1290,7 +1330,7 @@ body::before {
 }
 
 pre.mermaid {
-  width: min(1060px, calc(100vw - 48px));
+  width: min(1240px, calc(100vw - 48px));
   margin: 32px 0 32px 50%;
   transform: translateX(-50%);
   padding: 18px;
@@ -1325,9 +1365,11 @@ pre.mermaid svg { max-width: 100%; height: auto; }
 
 @media (max-width: 760px) {
   .post { padding: 36px 20px 72px; }
-  .postBar { padding: 12px 20px; }
+  .postBar { padding: 10px 20px; }
+  .prose { font-size: 16.5px; }
   .postTitle { font-size: 32px; }
   pre.mermaid { width: 100%; margin: 26px 0; transform: none; }
+  .postBarName { display: none; }
   .postDeck { font-size: 17px; }
   .prose h2 { font-size: 24px; }
 }

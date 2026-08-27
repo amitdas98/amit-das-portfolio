@@ -19,6 +19,7 @@ export interface Post extends PostMeta {
   deck: string | null
   html: string
   hasDiagram: boolean
+  raw: string
 }
 
 const md = new MarkdownIt({ html: true, linkify: true, typographer: false })
@@ -97,6 +98,7 @@ function parse(fileName: string): Post {
     deck,
     html,
     hasDiagram: html.includes('class="mermaid"'),
+    raw: content.trim(),
   }
 }
 

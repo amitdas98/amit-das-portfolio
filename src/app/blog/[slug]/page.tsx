@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAllPostMeta, getPost } from '@/lib/posts'
 import Mermaid from '@/components/Mermaid'
+import CopyMarkdown from '@/components/CopyMarkdown'
 
 export function generateStaticParams() {
   return getAllPostMeta().map(post => ({ slug: post.slug }))
@@ -37,7 +38,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     <div className="postShell">
       <nav className="postBar">
         <Link className="postBack" href="/#sec-blog">← Writing</Link>
-        <span className="postBarName">Amit Das</span>
+        <div className="postBarRight">
+          <CopyMarkdown markdown={post.raw} />
+          <span className="postBarName">Amit Das</span>
+        </div>
       </nav>
 
       <article className="post">
